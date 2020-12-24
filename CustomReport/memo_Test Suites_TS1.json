@@ -1,0 +1,30 @@
+{
+  "testSuite": {
+    "testSuiteId": "Test Suites/TS1",
+    "status": "COMPLETE"
+  },
+  "executionProfile": "ProfileX",
+  "testCases": [
+    {
+      "isMainTestCase": true,
+      "testCaseStatus": "PASSED",
+      "testCaseId": "Test Cases/TC1",
+      "testCaseVariables": {
+        "var2": 99,
+        "var1": "foo"
+      },
+      "message": "",
+      "testCaseIndex": 0,
+      "isSkipped": false
+    },
+    {
+      "isMainTestCase": true,
+      "testCaseStatus": "FAILED",
+      "testCaseId": "Test Cases/TC2",
+      "testCaseVariables": {},
+      "message": "Test Cases/TC2 FAILED.\nReason:\ncom.kms.katalon.core.exception.StepFailedException: Failed intentionally\n\tat com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)\n\tat com.kms.katalon.core.util.KeywordUtil$markFailed.call(Unknown Source)\n\tat TC2.run(TC2:5)\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)\n\tat com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)\n\tat TempTestSuite1608783213440.run(TempTestSuite1608783213440.groovy:39)\n",
+      "testCaseIndex": 1,
+      "isSkipped": false
+    }
+  ]
+}

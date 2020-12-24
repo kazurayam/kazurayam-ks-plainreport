@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4cba89a7-4dae-4759-b3ac-24e74b85410b</testCaseGuid>
+   <variable>
+      <defaultValue>'foo'</defaultValue>
+      <description></description>
+      <id>320ac081-f2e0-4c01-8b12-6d58de37cbc1</id>
+      <masked>false</masked>
+      <name>var1</name>
+   </variable>
+   <variable>
+      <defaultValue>99</defaultValue>
+      <description></description>
+      <id>477e39ea-082e-4a41-9584-595800304b3c</id>
+      <masked>false</masked>
+      <name>var2</name>
+   </variable>
+</TestCaseEntity>
