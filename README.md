@@ -2,7 +2,7 @@
 ========
 
 This is a small [Katalon Studio](https://www.katalon.com/download/) project for demonstration purpose.
-You can download a zip file of the project from [Releases]() page, unzip it, open it with your local Katalon Studio.
+You can download a zip file of the project from [Releases](https://github.com/kazurayam/CompilingCustomReportInKatalonStudio/releases) page, unzip it, open it with your local Katalon Studio.
 
 This project was developed using Katalon Studio version 7.8.1 but it will run with any version above 7.0.
 
