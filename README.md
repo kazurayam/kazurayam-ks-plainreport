@@ -60,7 +60,7 @@ The [`CustomReport/memo_TS1.json`](CustomReport/memo_TS1.json) file contains inf
 
 The [`execution0.log`] file is copied from the Reports folder just to for reference. In the log file you can find all messages emited by your tests with a lot of additives including timestamp.
 
-![CustomReportCreated](docs/images/CustomReportCreated.png)
+![CustomReportCreated](docs/images/CustomReportCreated0.png)
 
 ## How the demo designed
 
