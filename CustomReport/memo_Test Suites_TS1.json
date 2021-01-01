@@ -3,7 +3,8 @@
     "testSuiteId": "Test Suites/TS1",
     "status": "COMPLETE"
   },
-  "executionProfile": "ProfileX",
+  "executionProfile": "default",
+  "executedBrowser": "Chrome",
   "testCases": [
     {
       "isMainTestCase": true,
@@ -22,9 +23,136 @@
       "testCaseStatus": "FAILED",
       "testCaseId": "Test Cases/TC2",
       "testCaseVariables": {},
-      "message": "Test Cases/TC2 FAILED.\nReason:\ncom.kms.katalon.core.exception.StepFailedException: Failed intentionally\n\tat com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)\n\tat com.kms.katalon.core.util.KeywordUtil$markFailed.call(Unknown Source)\n\tat TC2.run(TC2:5)\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)\n\tat com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)\n\tat TempTestSuite1608783213440.run(TempTestSuite1608783213440.groovy:39)\n",
+      "message": "Test Cases/TC2 FAILED.\nReason:\ncom.kms.katalon.core.exception.StepFailedException: Failed intentionally\n\tat com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)\n\tat com.kms.katalon.core.util.KeywordUtil$markFailed.call(Unknown Source)\n\tat TC2.run(TC2:5)\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)\n\tat com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)\n\tat TempTestSuite1609474112775.run(TempTestSuite1609474112775.groovy:39)\n",
       "testCaseIndex": 1,
       "isSkipped": false
     }
-  ]
+  ],
+  "executionProperties": {
+    "Name": "Chrome",
+    "allowCustomizeRequestResponseSizeLimit": false,
+    "allowCustomizeRequestTimeout": false,
+    "allowUsingSelfHealing": false,
+    "allowUsingTimeCapsule": true,
+    "description": "",
+    "execution": {
+      "drivers": {
+        "preferences": {
+          "WebUI": {}
+        },
+        "system": {
+          "WebUI": {
+            "browserType": "CHROME_DRIVER",
+            "chromeDriverPath": "/Applications/Katalon Studio.app/Contents/Eclipse/configuration/resources/drivers/chromedriver_mac/chromedriver"
+          }
+        }
+      },
+      "general": {
+        "actionDelay": 0,
+        "autoApplyNeighborXpaths": false,
+        "defaultFailureHandling": "STOP_ON_FAILURE",
+        "defaultPageLoadTimeout": 30,
+        "enablePageLoadTimeout": false,
+        "excludeKeywords": [
+          "verifyElementPresent",
+          "verifyElementNotPresent"
+        ],
+        "executionProfile": "default",
+        "ignorePageLoadTimeoutException": false,
+        "methodsPriorityOrder": [
+          {
+            "left": "XPATH",
+            "right": true
+          },
+          {
+            "left": "BASIC",
+            "right": true
+          },
+          {
+            "left": "CSS",
+            "right": true
+          },
+          {
+            "left": "IMAGE",
+            "right": true
+          }
+        ],
+        "proxy": "{\"proxyOption\":\"NO_PROXY\",\"proxyServerType\":\"HTTP\",\"username\":\"\",\"password\":\"\",\"proxyServerAddress\":\"\",\"proxyServerPort\":0,\"exceptionList\":\"\",\"applyToDesiredCapabilities\":true}",
+        "report": {
+          "reportFolder": "/Users/kazuakiurayama/katalon-workspace/CompilingCustomReportInKatalonStudio/Reports/20210101_130832/TS1/20210101_130832",
+          "screenCaptureOption": true,
+          "videoRecorderOption": {
+            "allowedRecordIfFailed": true,
+            "allowedRecordIfPassed": false,
+            "enable": false,
+            "recordAllTestCases": false,
+            "useBrowserRecorder": false,
+            "videoFormat": "AVI",
+            "videoQuality": "LOW"
+          }
+        },
+        "selfHealingEnabled": false,
+        "terminateDriverAfterTestCase": false,
+        "terminateDriverAfterTestSuite": true,
+        "testDataInfo": {},
+        "timeCapsuleEnabled": false,
+        "timeout": 30,
+        "useActionDelayInSecond": "SECONDS",
+        "xpathsPriority": [
+          {
+            "left": "xpath:attributes",
+            "right": true
+          },
+          {
+            "left": "xpath:idRelative",
+            "right": true
+          },
+          {
+            "left": "dom:name",
+            "right": true
+          },
+          {
+            "left": "xpath:link",
+            "right": true
+          },
+          {
+            "left": "xpath:neighbor",
+            "right": true
+          },
+          {
+            "left": "xpath:href",
+            "right": true
+          },
+          {
+            "left": "xpath:img",
+            "right": true
+          },
+          {
+            "left": "xpath:position",
+            "right": true
+          }
+        ]
+      },
+      "globalSmartWaitEnabled": true,
+      "logTestSteps": true
+    },
+    "host": {
+      "hostAddress": "192.168.0.2",
+      "hostName": "kazuakiurayama - kazuakinoair.airport",
+      "hostPort": 64822,
+      "os": "Mac OS X 64bit"
+    },
+    "id": "Test Suites/TS1",
+    "logbackConfigFileLocation": "/Applications/Katalon Studio.app/Contents/Eclipse/configuration/org.eclipse.osgi/73/0/.cp/resources/logback/logback-console.xml",
+    "name": "TS1",
+    "pluginTestListeners": [
+      "KatalonReportListener"
+    ],
+    "projectDir": "/Users/kazuakiurayama/katalon-workspace/CompilingCustomReportInKatalonStudio",
+    "runningMode": "GUI",
+    "sessionServer.host": "localhost",
+    "sessionServer.port": 52305,
+    "source": "/Users/kazuakiurayama/katalon-workspace/CompilingCustomReportInKatalonStudio/Test Suites/TS1.ts",
+    "testops": {}
+  }
 }

@@ -6,6 +6,7 @@
    <UUID>f20f395f-8fcb-4702-bf79-a4791815eab4</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>/Users/kazuakiurayama/katalon-workspace/CompilingCustomReportInKatalonStudio/CompilingCustomReportInKatalonStudio.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
