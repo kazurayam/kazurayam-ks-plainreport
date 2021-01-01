@@ -66,7 +66,7 @@ The [`execution0.log`] file is copied from the Reports folder just to for easier
 
 Please read the source of the project to find how the demo designed.
 
-The core part is [`Test Listeners/MyTestListener.groovy`](Test%20Listeners/MyTestListener.groovy). The `MyTestListener` and a custom Groovy class [`my.Memo`](Keywords/my/Memo.groovy) do everything needed to produce the JSON report.
+The core part is [`Test Listeners/CustomReportCompiler.groovy`](Test%20Listeners/CustomReportCompiler.groovy). The `CustomReportCompiler` and a custom Groovy class [`my.Memo`](Keywords/my/Memo.groovy) do everything needed to produce the JSON report.
 
 ## Desired Reporting frameworks ...
 
