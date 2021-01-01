@@ -16,7 +16,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import groovy.json.JsonSlurper
 import my.Memo
 
-class MyTestListener {
+class CustomReportCompiler {
 	
 	static Path outDir
 	static Memo memo
@@ -49,14 +49,10 @@ class MyTestListener {
 	
 	@AfterTestSuite
 	def afterTestSuite(TestSuiteContext testSuiteContext) {
-		// for debug; print the list of files in the Reports folder
-		Path reportFolder = Paths.get(RunConfiguration.getReportFolder())
-		Set files = Files.list(reportFolder)
-						.filter { file -> !Files.isDirectory(file) }
-						.collect(Collectors.toSet())
-		for (Path f in files) {
-			println("@AfterTestSuite: ${f.getFileName()} ${f.toFile().length()}bytes")
-		}
+		// for debug
+		// print the list of files in the Reports folder
+		println("@AfterTestSuite")
+		listFilesInReportFolder()
 		
 		// fetch the execution.properties file in the Report folder into the Memo object
 		Path expro = Paths.get(RunConfiguration.getReportFolder()).resolve('execution.properties')
@@ -64,12 +60,27 @@ class MyTestListener {
 		memo.setExecutionProperties(executionProperties)
 		
 		// serialize the Memo object into a JSON file
-		Path memoFile = outDir.resolve('memo_' + testSuiteContext.getTestSuiteId().replace('/', '_') + '.json')
+		Path memoFile = outDir.resolve(
+			'memo_' + 
+			testSuiteContext.getTestSuiteId().replace('Test Suites/', '').replace('/', '_') +
+			'.json')
 		memoFile.toFile().text = memo.toJson()
 		
 		// copy the execution0.log file in the Report folder into the CustomReport folder
 		Path source = Paths.get(RunConfiguration.getReportFolder()).resolve('execution0.log')
 		Path dest = outDir.resolve('execution0.log')
 		Files.copy(source, dest, StandardCopyOption.REPLACE_EXISTING);
+	}
+	
+	void listFilesInReportFolder() {
+		Path projectDir = Paths.get(RunConfiguration.getProjectDir())
+		Path reportFolder = Paths.get(RunConfiguration.getReportFolder())
+		Set files = Files.list(reportFolder)
+						.filter { file -> !Files.isDirectory(file) }
+						.collect(Collectors.toSet())
+		for (Path f in files) {
+			Path relativePath = projectDir.relativize(f)
+			println("${relativePath} ${f.toFile().length()}bytes")
+		}
 	}
 }
