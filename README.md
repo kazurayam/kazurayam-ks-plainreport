@@ -1,4 +1,4 @@
-[Katalon Studio] TestListener can compile custom test report --- a skeletal implementation
+Custom Test Report compiled by TestListener
 ========
 
 This is a small [Katalon Studio](https://www.katalon.com/download/) project for demonstration purpose.
