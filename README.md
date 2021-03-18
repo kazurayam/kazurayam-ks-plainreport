@@ -24,6 +24,8 @@ Katalon Studio provides [CustomReportCompiler](https://docs.katalon.com/katalon-
 
 If you make full use of the TestListener feature, you can compile your own reports of test execution with full control over contents/location/timing. You can compile report in any format you like. You can save the file wherever you want.
 
+I have made a skeletal implementation of my Test Report which is in JSON text format. I used the [Gson](https://github.com/google/gson) library which is bundled in Katalon Studio.
+
 # Description
 
 ## How to run the demo
@@ -48,19 +50,23 @@ This message proves that **2 files in the Report folder (`execution.properites` 
 ### CustomReport dir
 
 Once the `Test Suites/TS1` finished, a new folder `<projectDir>/CustomReport` will be created.
-Inside it you will find a 2 files.
+Inside it you will find a 3 files.
 
-- memo_TS1.json
 - execution0.log
+- memo_TS1.json
+- messages_TS1.txct
+
+The [`execution0.log`] file is copied from the Reports folder just to for easier reference. In the log file you can find all messages emited by your tests with a lot of additives including timestamp.
 
 The [`CustomReport/memo_TS1.json`](CustomReport/memo_TS1.json) file contains information from:
 - the TestSuiteContext object
 - the TestCaseContext objects
 - the execution.properties file
 
-The [`execution0.log`] file is copied from the Reports folder just to for easier reference. In the log file you can find all messages emited by your tests with a lot of additives including timestamp.
+The [`CustomReport/messages_TS1.json`](CustomReport/messages_TS1.txt) file contains messages emitted by failed Test Cases in Java printStackTrace format.
 
 ![CustomReportCreated](docs/images/CustomReportCreated0.png)
+
 
 ## How the demo designed
 
