@@ -17,5 +17,5 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.comment('TC1 started')
 
-WebUI.acceptAlert()
+//WebUI.acceptAlert()
 
