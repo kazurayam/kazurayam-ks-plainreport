@@ -3,11 +3,13 @@ package my
 import static org.hamcrest.CoreMatchers.*
 import static org.junit.Assert.*
 
+import org.junit.Ignore
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.JUnit4
 
+import com.google.gson.JsonElement
 import com.google.gson.JsonObject
 import com.google.gson.GsonBuilder
 
@@ -16,34 +18,49 @@ import com.google.gson.JsonParser
 @RunWith(JUnit4.class)
 class JsonUtilTest {
 
-	@Before
-	void setup() {
-	}
-
-	/**
-	 */
-	@Test
-	void test_sortAndGet_smoke() {
-		String input = """{
+	String input = """{
+	"e": "e",
+	"d": null,
+	"c": 1,
 	"b": {
 		"Y":"y",
 		"X":"y"
 		},
-	"a": [3,2,1]
+	"a": [{"L":1,"K":0},{"G":3,"F":2}],
+	"E": "E"
 }
 """
-		JsonObject inputJson = new JsonParser().parse(input).getAsJsonObject();
-		String expected = """{
-	"a": [3,2,1],
+	String expected = """{
+	"a": [{"K":0,"L":1},{"F":2,"G":3}],
 	"b": {
 		"X":"y",
 		"Y":"y"
-		}
+		},
+	"c": 1,
+	"d": null,
+	"e": "e",
+	"E": "E"
 }"""
-		JsonObject expectedJson = new JsonParser().parse(input).getAsJsonObject();
-		JsonObject actualJson = JsonUtil.sortAndGet(inputJson)
+
+	@Before
+	void setup() {
+	}
+
+
+	@Test
+	void test_cm() {
+		String var2 = "var2"
+		String var1 = "var1"
+		int result = JsonUtil.cm.compare(var2, var1)
+		assertEquals(1, result)
+	}
+
+	@Test
+	void test_sort() {
+		JsonElement inputJson = new JsonParser().parse(input)
+		JsonElement expectedJson = new JsonParser().parse(expected)
+		JsonElement actualJson = JsonUtil.sort(inputJson)
 		assertEquals(expectedJson, actualJson)
 		println("actualJson is: " + actualJson)
 	}
-	
 }

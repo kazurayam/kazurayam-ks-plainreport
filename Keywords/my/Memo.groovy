@@ -2,6 +2,7 @@ package my
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
+import com.google.gson.JsonElement
 import com.google.gson.JsonObject
 import com.google.gson.JsonParser
 import com.kms.katalon.core.context.TestCaseContext
@@ -47,12 +48,12 @@ public class Memo {
 		String json = gson.toJson(this)
 		return json
 	}
-	
+
 	String toSortedJson() {
 		String json = this.toJson()
-		JsonObject jo = new JsonParser().parse(json).getAsJsonObject()
-		JsonObject joSorted = JsonUtil.sortAndGet(jo)
+		JsonElement je = new JsonParser().parse(json)
+		JsonElement jeSorted = JsonUtil.sort(je)
 		Gson gson = new GsonBuilder().setPrettyPrinting().create()
-		return gson.toJson(joSorted)
+		return gson.toJson(jeSorted)
 	}
 }

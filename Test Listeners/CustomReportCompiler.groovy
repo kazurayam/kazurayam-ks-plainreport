@@ -64,6 +64,7 @@ class CustomReportCompiler {
 			'memo_' + 
 			testSuiteContext.getTestSuiteId().replace('Test Suites/', '').replace('/', '_') +
 			'.json')
+		
 		//memoFile.toFile().text = memo.toJson()
 		memoFile.toFile().text = memo.toSortedJson()
 		
