@@ -1,5 +1,6 @@
 package my
 
+import java.util.Comparator
 import java.util.stream.Collectors
 
 import com.google.gson.JsonElement
@@ -7,6 +8,8 @@ import com.google.gson.JsonObject
 
 public class JsonUtil {
 
+	static Comparator cm = { String a, String b -> a.compareToIgnoreCase(b) }
+	
 	private JsonUtil() {}
 
 	/**
@@ -19,7 +22,7 @@ public class JsonUtil {
 	 * @return
 	 */
 	private static JsonObject sortAndGet(JsonObject jsonObject) {
-		List<String> keySet = jsonObject.keySet().stream().sorted().collect(Collectors.toList());
+		List<String> keySet = jsonObject.keySet().stream().sorted(cm).collect(Collectors.toList());
 		JsonObject temp = new JsonObject();
 		for (String key : keySet) {
 			JsonElement ele = jsonObject.get(key);
