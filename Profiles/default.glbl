@@ -4,4 +4,9 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'bar'</initValue>
+      <name>foo</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

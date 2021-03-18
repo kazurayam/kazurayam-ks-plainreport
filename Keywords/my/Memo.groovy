@@ -3,12 +3,9 @@ package my
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
-import com.google.gson.JsonObject
 import com.google.gson.JsonParser
 import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.context.TestSuiteContext
-import com.kms.katalon.core.driver.DriverType
-import my.JsonUtil
 
 public class Memo {
 
@@ -17,6 +14,7 @@ public class Memo {
 	private String executedBrowser
 	private List<TestCaseContext> testCases
 	private Map<String, Object> executionProperties
+	private Map<String, Object> globalVariables
 
 	Memo() {
 		this(null)
@@ -25,6 +23,7 @@ public class Memo {
 	Memo(TestSuiteContext testSuiteContext) {
 		this.testSuite = testSuiteContext
 		this.testCases = new ArrayList<TestCaseContext>()
+		this.globalVariables = GlobalVariableSupport.aquireGlobalVariablesAsMap()
 	}
 
 	void setExecutionProfile(String executionProfile) {
@@ -56,10 +55,10 @@ public class Memo {
 		Gson gson = new GsonBuilder().setPrettyPrinting().create()
 		return gson.toJson(jeSorted)
 	}
-	
+
 	String printableMessages() {
 		StringBuilder sb = new StringBuilder()
-		testCases.forEach({ testCaseContext -> 
+		testCases.forEach({ testCaseContext ->
 			String message = testCaseContext.getMessage()
 			if (message.length() > 0) {
 				String[] lines = message.split("\\n")
@@ -71,4 +70,5 @@ public class Memo {
 		})
 		return sb.toString()
 	}
+	
 }
