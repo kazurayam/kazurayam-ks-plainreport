@@ -56,4 +56,19 @@ public class Memo {
 		Gson gson = new GsonBuilder().setPrettyPrinting().create()
 		return gson.toJson(jeSorted)
 	}
+	
+	String printableMessages() {
+		StringBuilder sb = new StringBuilder()
+		testCases.forEach({ testCaseContext -> 
+			String message = testCaseContext.getMessage()
+			if (message.length() > 0) {
+				String[] lines = message.split("\\n")
+				lines.each { String line ->
+					sb.append(line.replaceAll("\\t", '  '))
+					sb.append("\n")
+				}
+			}
+		})
+		return sb.toString()
+	}
 }

@@ -68,6 +68,13 @@ class CustomReportCompiler {
 		//memoFile.toFile().text = memo.toJson()
 		memoFile.toFile().text = memo.toSortedJson()
 		
+		// print TestCaseContext messages into a plain text file
+		Path messagesFile = outDir.resolve(
+			"messages_" +
+			testSuiteContext.getTestSuiteId().replace('Test Suites/', '').replace('/', '_') +
+			'.txt')
+		messagesFile.toFile().text = memo.printableMessages()
+		
 		// copy the execution0.log file in the Report folder into the CustomReport folder
 		Path source = Paths.get(RunConfiguration.getReportFolder()).resolve('execution0.log')
 		Path dest = outDir.resolve('execution0.log')
