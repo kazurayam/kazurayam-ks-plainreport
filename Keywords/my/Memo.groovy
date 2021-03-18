@@ -11,11 +11,11 @@ public class Memo {
 
 	private TestSuiteContext testSuite
 	private String executionProfile
+	private Map<String, Object> executionProfile_GlobalVariables
 	private String executedBrowser
 	private List<TestCaseContext> testCases
 	private Map<String, Object> executionProperties
-	private Map<String, Object> globalVariables
-
+	
 	Memo() {
 		this(null)
 	}
@@ -23,7 +23,7 @@ public class Memo {
 	Memo(TestSuiteContext testSuiteContext) {
 		this.testSuite = testSuiteContext
 		this.testCases = new ArrayList<TestCaseContext>()
-		this.globalVariables = GlobalVariableSupport.aquireGlobalVariablesAsMap()
+		this.executionProfile_GlobalVariables = GlobalVariableSupport.aquireGlobalVariablesAsMap()
 	}
 
 	void setExecutionProfile(String executionProfile) {
@@ -70,5 +70,4 @@ public class Memo {
 		})
 		return sb.toString()
 	}
-	
 }

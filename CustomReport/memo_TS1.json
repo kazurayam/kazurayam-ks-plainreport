@@ -1,6 +1,17 @@
 {
   "executedBrowser": "Chrome",
   "executionProfile": "default",
+  "executionProfile_GlobalVariables": {
+    "DEBUG_MODE": false,
+    "foo": "bar",
+    "Password": "",
+    "Products": [
+      88,
+      99
+    ],
+    "URL": "http://demoaut.katlaon.com/",
+    "Username": "John Doe"
+  },
   "executionProperties": {
     "allowCustomizeRequestResponseSizeLimit": true,
     "allowCustomizeRequestTimeout": true,
@@ -51,7 +62,7 @@
         ],
         "proxy": "{\"proxyOption\":\"NO_PROXY\",\"proxyServerType\":\"HTTP\",\"username\":\"\",\"password\":\"\",\"proxyServerAddress\":\"\",\"proxyServerPort\":0,\"exceptionList\":\"\",\"applyToDesiredCapabilities\":true}",
         "report": {
-          "reportFolder": "/Users/kazuakiurayama/katalon-workspace/CompilingCustomReportInKatalonStudio/Reports/20210318_161809/TS1/20210318_161809",
+          "reportFolder": "/Users/kazuakiurayama/katalon-workspace/CompilingCustomReportInKatalonStudio/Reports/20210318_190332/TS1/20210318_190332",
           "screenCaptureOption": true,
           "videoRecorderOption": {
             "allowedRecordIfFailed": true,
@@ -63,7 +74,7 @@
             "videoQuality": "LOW"
           }
         },
-        "selfHealingEnabled": true,
+        "selfHealingEnabled": false,
         "terminateDriverAfterTestCase": false,
         "terminateDriverAfterTestSuite": true,
         "testDataInfo": {},
@@ -111,7 +122,7 @@
     "host": {
       "hostAddress": "192.168.43.135",
       "hostName": "kazuakiurayama - 192.168.43.135",
-      "hostPort": 53600,
+      "hostPort": 54309,
       "os": "Mac OS X 64bit"
     },
     "id": "Test Suites/TS1",
@@ -144,7 +155,7 @@
     {
       "isMainTestCase": true,
       "isSkipped": false,
-      "message": "Test Cases/TC2 FAILED.\nReason:\ncom.kms.katalon.core.exception.StepFailedException: Failed intentionally\n\tat com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)\n\tat com.kms.katalon.core.util.KeywordUtil$markFailed.call(Unknown Source)\n\tat TC2.run(TC2:6)\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:398)\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:389)\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:368)\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:360)\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:255)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)\n\tat com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)\n\tat TempTestSuite1616051889386.run(TempTestSuite1616051889386.groovy:39)\n",
+      "message": "Test Cases/TC2 FAILED.\nReason:\ncom.kms.katalon.core.exception.StepFailedException: Failed intentionally\n\tat com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)\n\tat com.kms.katalon.core.util.KeywordUtil$markFailed.call(Unknown Source)\n\tat TC2.run(TC2:6)\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:398)\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:389)\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:368)\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:360)\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:255)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)\n\tat com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)\n\tat TempTestSuite1616061812827.run(TempTestSuite1616061812827.groovy:39)\n",
       "testCaseId": "Test Cases/TC2",
       "testCaseIndex": 1,
       "testCaseStatus": "FAILED",
