@@ -54,16 +54,16 @@ Inside it you will find a 3 files.
 
 - execution0.log
 - memo_TS1.json
-- messages_TS1.txct
+- messages_TS1.txt
 
-The [`execution0.log`] file is copied from the Reports folder just to for easier reference. In the log file you can find all messages emited by your tests with a lot of additives including timestamp.
+The [`execution0.log`] file is copied from the Reports folder just to for easier reference. In the log file you can find all messages emitted by your tests with a lot of additives including timestamp.
 
 The [`CustomReport/memo_TS1.json`](CustomReport/memo_TS1.json) file contains information from:
 - the TestSuiteContext object
 - the TestCaseContext objects
 - the execution.properties file
 
-The [`CustomReport/messages_TS1.json`](CustomReport/messages_TS1.txt) file contains messages emitted by failed Test Cases in Java printStackTrace format.
+The [`CustomReport/messages_TS1.txt`](CustomReport/messages_TS1.txt) file contains messages emitted by failed Test Cases in Java printStackTrace format.
 
 ![CustomReportCreated](docs/images/CustomReportCreated0.png)
 
