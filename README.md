@@ -55,7 +55,7 @@ Inside it you will find a 2 files.
 
 The [`CustomReport/memo_TS1.json`](CustomReport/memo_TS1.json) file contains information from:
 - the TestSuiteContext object
-- the TestCaseCAontext objects
+- the TestCaseContext objects
 - the execution.properties file
 
 The [`execution0.log`] file is copied from the Reports folder just to for easier reference. In the log file you can find all messages emited by your tests with a lot of additives including timestamp.

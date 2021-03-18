@@ -1,38 +1,11 @@
 {
-  "testSuite": {
-    "testSuiteId": "Test Suites/TS1",
-    "status": "COMPLETE"
-  },
-  "executionProfile": "default",
   "executedBrowser": "Chrome",
-  "testCases": [
-    {
-      "isMainTestCase": true,
-      "testCaseStatus": "PASSED",
-      "testCaseId": "Test Cases/TC1",
-      "testCaseVariables": {
-        "var2": 99,
-        "var1": "foo"
-      },
-      "message": "",
-      "testCaseIndex": 0,
-      "isSkipped": false
-    },
-    {
-      "isMainTestCase": true,
-      "testCaseStatus": "FAILED",
-      "testCaseId": "Test Cases/TC2",
-      "testCaseVariables": {},
-      "message": "Test Cases/TC2 FAILED.\nReason:\ncom.kms.katalon.core.exception.StepFailedException: Failed intentionally\n\tat com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)\n\tat com.kms.katalon.core.util.KeywordUtil$markFailed.call(Unknown Source)\n\tat TC2.run(TC2:5)\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)\n\tat com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)\n\tat TempTestSuite1609475554745.run(TempTestSuite1609475554745.groovy:39)\n",
-      "testCaseIndex": 1,
-      "isSkipped": false
-    }
-  ],
+  "executionProfile": "default",
   "executionProperties": {
     "Name": "Chrome",
-    "allowCustomizeRequestResponseSizeLimit": false,
-    "allowCustomizeRequestTimeout": false,
-    "allowUsingSelfHealing": false,
+    "allowCustomizeRequestResponseSizeLimit": true,
+    "allowCustomizeRequestTimeout": true,
+    "allowUsingSelfHealing": true,
     "allowUsingTimeCapsule": true,
     "description": "",
     "execution": {
@@ -79,7 +52,7 @@
         ],
         "proxy": "{\"proxyOption\":\"NO_PROXY\",\"proxyServerType\":\"HTTP\",\"username\":\"\",\"password\":\"\",\"proxyServerAddress\":\"\",\"proxyServerPort\":0,\"exceptionList\":\"\",\"applyToDesiredCapabilities\":true}",
         "report": {
-          "reportFolder": "/Users/kazuakiurayama/katalon-workspace/CompilingCustomReportInKatalonStudio/Reports/20210101_133234/TS1/20210101_133234",
+          "reportFolder": "/Users/kazuakiurayama/katalon-workspace/CompilingCustomReportInKatalonStudio/Reports/20210318_102618/TS1/20210318_102618",
           "screenCaptureOption": true,
           "videoRecorderOption": {
             "allowedRecordIfFailed": true,
@@ -91,7 +64,7 @@
             "videoQuality": "LOW"
           }
         },
-        "selfHealingEnabled": false,
+        "selfHealingEnabled": true,
         "terminateDriverAfterTestCase": false,
         "terminateDriverAfterTestSuite": true,
         "testDataInfo": {},
@@ -137,9 +110,9 @@
       "logTestSteps": true
     },
     "host": {
-      "hostAddress": "192.168.0.2",
-      "hostName": "kazuakiurayama - kazuakinoair.airport",
-      "hostPort": 49579,
+      "hostAddress": "192.168.43.135",
+      "hostName": "kazuakiurayama - 192.168.43.135",
+      "hostPort": 52077,
       "os": "Mac OS X 64bit"
     },
     "id": "Test Suites/TS1",
@@ -151,8 +124,35 @@
     "projectDir": "/Users/kazuakiurayama/katalon-workspace/CompilingCustomReportInKatalonStudio",
     "runningMode": "GUI",
     "sessionServer.host": "localhost",
-    "sessionServer.port": 52305,
+    "sessionServer.port": 51687,
     "source": "/Users/kazuakiurayama/katalon-workspace/CompilingCustomReportInKatalonStudio/Test Suites/TS1.ts",
     "testops": {}
+  },
+  "testCases": [
+    {
+      "isMainTestCase": true,
+      "testCaseStatus": "FAILED",
+      "testCaseId": "Test Cases/TC1",
+      "testCaseVariables": {
+        "var2": 99,
+        "var1": "foo"
+      },
+      "message": "Test Cases/TC1 FAILED.\nReason:\ncom.kms.katalon.core.exception.StepFailedException: Unable to accept alert\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)\n\tat com.kms.katalon.core.webui.keyword.builtin.AcceptAlertKeyword.acceptAlert(AcceptAlertKeyword.groovy:71)\n\tat com.kms.katalon.core.webui.keyword.builtin.AcceptAlertKeyword.execute(AcceptAlertKeyword.groovy:66)\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.acceptAlert(WebUiBuiltInKeywords.groovy:1521)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$acceptAlert.call(Unknown Source)\n\tat TC1.run(TC1:20)\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:398)\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:389)\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:368)\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:360)\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:255)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)\n\tat com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)\n\tat TempTestSuite1616030778898.run(TempTestSuite1616030778898.groovy:39)\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:25:53\u0027\nSystem info: host: \u0027KAZUAKInoMacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:1095:79cf:8869:7e87%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_275\u0027\nDriver info: driver.version: unknown\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:931)\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getAlert(DriverFactory.java:944)\n\tat com.kms.katalon.core.webui.keyword.builtin.AcceptAlertKeyword$_acceptAlert_closure1.doCall(AcceptAlertKeyword.groovy:72)\n\tat com.kms.katalon.core.webui.keyword.builtin.AcceptAlertKeyword$_acceptAlert_closure1.call(AcceptAlertKeyword.groovy)\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)\n\t... 19 more\n",
+      "testCaseIndex": 0,
+      "isSkipped": false
+    },
+    {
+      "isMainTestCase": true,
+      "testCaseStatus": "FAILED",
+      "testCaseId": "Test Cases/TC2",
+      "testCaseVariables": {},
+      "message": "Test Cases/TC2 FAILED.\nReason:\ncom.kms.katalon.core.exception.StepFailedException: Failed intentionally\n\tat com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)\n\tat com.kms.katalon.core.util.KeywordUtil$markFailed.call(Unknown Source)\n\tat TC2.run(TC2:5)\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:398)\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:389)\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:368)\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:360)\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:255)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)\n\tat com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)\n\tat TempTestSuite1616030778898.run(TempTestSuite1616030778898.groovy:39)\n",
+      "testCaseIndex": 1,
+      "isSkipped": false
+    }
+  ],
+  "testSuite": {
+    "status": "COMPLETE",
+    "testSuiteId": "Test Suites/TS1"
   }
 }

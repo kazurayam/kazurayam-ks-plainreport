@@ -64,7 +64,8 @@ class CustomReportCompiler {
 			'memo_' + 
 			testSuiteContext.getTestSuiteId().replace('Test Suites/', '').replace('/', '_') +
 			'.json')
-		memoFile.toFile().text = memo.toJson()
+		//memoFile.toFile().text = memo.toJson()
+		memoFile.toFile().text = memo.toSortedJson()
 		
 		// copy the execution0.log file in the Report folder into the CustomReport folder
 		Path source = Paths.get(RunConfiguration.getReportFolder()).resolve('execution0.log')
@@ -80,7 +81,7 @@ class CustomReportCompiler {
 						.collect(Collectors.toSet())
 		for (Path f in files) {
 			Path relativePath = projectDir.relativize(f)
-			println("${relativePath} ${f.toFile().length()}bytes")
+			println("${relativePath} ${f.toFile().length()} bytes")
 		}
 	}
 }
