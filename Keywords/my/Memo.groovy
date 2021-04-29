@@ -15,7 +15,7 @@ public class Memo {
 	private String executedBrowser
 	private List<TestCaseContext> testCases
 	private Map<String, Object> executionProperties
-	
+
 	Memo() {
 		this(null)
 	}
