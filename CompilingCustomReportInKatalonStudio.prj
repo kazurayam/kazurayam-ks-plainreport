@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
    <description></description>
-   <name>CompilingCustomReportInKatalonStudio</name>
+   <name>kazurayam-ks-plainreport</name>
    <tag></tag>
    <UUID>f20f395f-8fcb-4702-bf79-a4791815eab4</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>/Users/kazuakiurayama/katalon-workspace/CompilingCustomReportInKatalonStudio/CompilingCustomReportInKatalonStudio.prj</projectFileLocation>
+   <projectFileLocation>/Users/kazuakiurayama/katalon-workspace/kazurayam-ks-plainreport/CompilingCustomReportInKatalonStudio.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
