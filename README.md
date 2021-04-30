@@ -10,13 +10,11 @@ This project was developed using Katalon Studio version 7.9.1 but it will run wi
 
 # Problem to solve
 
-In the Katalon User Forum, there was a [question](https://forum.katalon.com/t/get-results-html-path-filename-through-code/50526) that asked how to automatically copy the Test Reports in HTML/PDF format to another location once a test suite finished.
+In the Katalon User Forum, there was a [question](https://forum.katalon.com/t/get-results-html-path-filename-through-code/50526) that asked how to automatically copy the Test Reports in HTML/PDF format to another location once a test suite finished. In response to the question, I replied with a [post](https://forum.katalon.com/t/get-results-html-path-filename-through-code/50526/5)
+where I described my previous solution. To be honest, I am not very much happy with my previous solution. Russ Thomas replied a [post](https://forum.katalon.com/t/get-results-html-path-filename-through-code/50526/3) where
+he mentioned that, instead of bothering around the built-in Reports, he developed his own reporting functionality. 
 
-In response to the question, I replied with a [post](https://forum.katalon.com/t/get-results-html-path-filename-through-code/50526/5)
-where I described my previous solution. To be honest, I am not very much happy with my previous solution.
-
-Russ Thomas replied a [post](https://forum.katalon.com/t/get-results-html-path-filename-through-code/50526/3) where
-he mentioned that, instead of bothering around the built-in Reports, he developed his own reporting functionality. So I was motivated to seek for what custom report I can develop.
+So I was motivated to seek for what custom report I can develop in Katalon Studio.
 
 # Solution
 
@@ -41,7 +39,7 @@ I used the [Gson](https://github.com/google/gson) library to *jsonize* anonymous
 
 - In the `Test Listener` directory, create a new Test Listenner with any name.
 - Copy the sample code [Test Listeners/TLPlainReport](Test%20Listeners/TLPlainReport.groovy) and paste it into you new Test Listener, save it to disk.
-- No code editing is required.
+- The `TLPlainReport` is common to every case. No code editing is required.
 
 This new Test Listener is required.
 
@@ -60,19 +58,6 @@ Here I assume you will create a Test Suite named "TS1" which binds the TC1 and T
 Select the Test Suite "TS1" and run it.
 
 ## Demo output
-
-### Console log
-
-If you look at the console log, you can find output like this:
-```
-@AfterTestSuite
-Reports/20210101_133234/TS1/20210101_133234/execution0.log 30098bytes
-Reports/20210101_133234/TS1/20210101_133234/execution0.log.lck 0bytes
-Reports/20210101_133234/TS1/20210101_133234/execution.properties 2660bytes
-Reports/20210101_133234/TS1/20210101_133234/testCaseBinding 128bytes
-```
-
-This message proves that **2 files in the Report folder (`execution.properites` and `execution0.log`) are available at the event of `@AfterTestSuite`.** In these 2 files you can find almost all information out of Katalon Studio how the test suite was configured and how it ran.
 
 ### Output location
 
@@ -93,6 +78,19 @@ The [`report.TestSuiteID.yyyyMMdd_hhmmss.json`](PlainReport/plainreport.TS1.2021
 The [`messages.TestSuiteID.yyyyMMdd_hhmmss.txt`](PlainReport/messages.TS1.20210430_211217.txt) file contains the messages emitted by failed Test Cases in Java printStackTrace format.
 
 ![generatedReport](docs/images/generatedPlainReport.png)
+
+### Console log
+
+If you look at the console log, you can find output like this:
+```
+@AfterTestSuite
+Reports/20210101_133234/TS1/20210101_133234/execution0.log 30098bytes
+Reports/20210101_133234/TS1/20210101_133234/execution0.log.lck 0bytes
+Reports/20210101_133234/TS1/20210101_133234/execution.properties 2660bytes
+Reports/20210101_133234/TS1/20210101_133234/testCaseBinding 128bytes
+```
+
+This message proves that **2 files in the Report folder (`execution.properites` and `execution0.log`) are available at the event of `@AfterTestSuite`.** In these 2 files you can find almost all information out of Katalon Studio how the test suite was configured and how it ran.
 
 
 ## How the demo designed
