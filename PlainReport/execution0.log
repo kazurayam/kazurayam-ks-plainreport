@@ -2,8 +2,8 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2021-04-30T09:38:18</date>
-  <millis>1619743098951</millis>
+  <date>2021-04-30T10:52:36</date>
+  <millis>1619747556116</millis>
   <sequence>0</sequence>
   <level>START</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
@@ -18,8 +18,8 @@
   <property name="stopImmediately">false</property>
 </record>
 <record>
-  <date>2021-04-30T09:38:19</date>
-  <millis>1619743099046</millis>
+  <date>2021-04-30T10:52:36</date>
+  <millis>1619747556136</millis>
   <sequence>1</sequence>
   <level>RUN_DATA</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
@@ -31,8 +31,8 @@
   <property name="hostName">kazuakiurayama - kazuakinoair.airport</property>
 </record>
 <record>
-  <date>2021-04-30T09:38:19</date>
-  <millis>1619743099047</millis>
+  <date>2021-04-30T10:52:36</date>
+  <millis>1619747556138</millis>
   <sequence>2</sequence>
   <level>RUN_DATA</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
@@ -44,8 +44,8 @@
   <property name="os">Mac OS X 64bit</property>
 </record>
 <record>
-  <date>2021-04-30T09:38:19</date>
-  <millis>1619743099048</millis>
+  <date>2021-04-30T10:52:36</date>
+  <millis>1619747556139</millis>
   <sequence>3</sequence>
   <level>RUN_DATA</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
@@ -57,8 +57,8 @@
   <property name="hostAddress">192.168.0.3</property>
 </record>
 <record>
-  <date>2021-04-30T09:38:19</date>
-  <millis>1619743099050</millis>
+  <date>2021-04-30T10:52:36</date>
+  <millis>1619747556141</millis>
   <sequence>4</sequence>
   <level>RUN_DATA</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
@@ -70,8 +70,8 @@
   <property name="katalonVersion">7.9.1.208</property>
 </record>
 <record>
-  <date>2021-04-30T09:38:19</date>
-  <millis>1619743099386</millis>
+  <date>2021-04-30T10:52:36</date>
+  <millis>1619747556686</millis>
   <sequence>5</sequence>
   <level>START</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
@@ -82,87 +82,35 @@
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:19</date>
-  <millis>1619743099412</millis>
+  <date>2021-04-30T10:52:36</date>
+  <millis>1619747556703</millis>
   <sequence>7</sequence>
   <level>START</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
   <method>startKeyword</method>
   <thread>1</thread>
-  <message>Start action : report = new com.kazurayam.ks.plainreport.PlainReport(testSuiteContext)</message>
+  <message>Start action : reportgen.beforeTestSuite(testSuiteContext)</message>
   <nestedLevel>1</nestedLevel>
   <escapedJava>false</escapedJava>
-  <property name="startLine">29</property>
+  <property name="startLine">24</property>
   <property name="stepIndex">1</property>
 </record>
 <record>
-  <date>2021-04-30T09:38:19</date>
-  <millis>1619743099424</millis>
-  <sequence>8</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : report = new com.kazurayam.ks.plainreport.PlainReport(testSuiteContext)</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:19</date>
-  <millis>1619743099430</millis>
+  <date>2021-04-30T10:52:36</date>
+  <millis>1619747556776</millis>
   <sequence>9</sequence>
-  <level>START</level>
+  <level>END</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
+  <method>endKeyword</method>
   <thread>1</thread>
-  <message>Start action : report.setExecutionProfile(getExecutionProfile())</message>
+  <message>End action : reportgen.beforeTestSuite(testSuiteContext)</message>
   <nestedLevel>1</nestedLevel>
   <escapedJava>false</escapedJava>
-  <property name="startLine">30</property>
-  <property name="stepIndex">2</property>
 </record>
 <record>
-  <date>2021-04-30T09:38:19</date>
-  <millis>1619743099433</millis>
+  <date>2021-04-30T10:52:36</date>
+  <millis>1619747556777</millis>
   <sequence>10</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : report.setExecutionProfile(getExecutionProfile())</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:19</date>
-  <millis>1619743099433</millis>
-  <sequence>11</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : report.setExecutedBrowser(getExecutedBrowser().toString())</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">31</property>
-  <property name="stepIndex">3</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:19</date>
-  <millis>1619743099570</millis>
-  <sequence>13</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : report.setExecutedBrowser(getExecutedBrowser().toString())</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:19</date>
-  <millis>1619743099571</millis>
-  <sequence>14</sequence>
   <level>END</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
   <method>endKeyword</method>
@@ -172,9 +120,9 @@
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:20</date>
-  <millis>1619743100747</millis>
-  <sequence>15</sequence>
+  <date>2021-04-30T10:52:37</date>
+  <millis>1619747557648</millis>
+  <sequence>11</sequence>
   <level>START</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
   <method>startTest</method>
@@ -190,9 +138,9 @@
   <property name="isOptional">false</property>
 </record>
 <record>
-  <date>2021-04-30T09:38:20</date>
-  <millis>1619743100786</millis>
-  <sequence>17</sequence>
+  <date>2021-04-30T10:52:37</date>
+  <millis>1619747557706</millis>
+  <sequence>13</sequence>
   <level>INFO</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
   <method>logMessage</method>
@@ -202,9 +150,9 @@
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:20</date>
-  <millis>1619743100824</millis>
-  <sequence>18</sequence>
+  <date>2021-04-30T10:52:37</date>
+  <millis>1619747557741</millis>
+  <sequence>14</sequence>
   <level>INFO</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
   <method>logMessage</method>
@@ -214,9 +162,9 @@
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:20</date>
-  <millis>1619743100842</millis>
-  <sequence>19</sequence>
+  <date>2021-04-30T10:52:37</date>
+  <millis>1619747557744</millis>
+  <sequence>15</sequence>
   <level>START</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
   <method>startKeyword</method>
@@ -226,9 +174,35 @@
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:20</date>
-  <millis>1619743100844</millis>
-  <sequence>22</sequence>
+  <date>2021-04-30T10:52:37</date>
+  <millis>1619747557745</millis>
+  <sequence>17</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : reportgen.beforeTestCase(testCaseContext)</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="startLine">29</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2021-04-30T10:52:37</date>
+  <millis>1619747557747</millis>
+  <sequence>19</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : reportgen.beforeTestCase(testCaseContext)</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2021-04-30T10:52:37</date>
+  <millis>1619747557747</millis>
+  <sequence>20</sequence>
   <level>END</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
   <method>endKeyword</method>
@@ -238,9 +212,9 @@
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101183</millis>
-  <sequence>23</sequence>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558328</millis>
+  <sequence>21</sequence>
   <level>START</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
   <method>startKeyword</method>
@@ -252,9 +226,9 @@
   <property name="stepIndex">1</property>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101295</millis>
-  <sequence>24</sequence>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558486</millis>
+  <sequence>22</sequence>
   <level>INFO</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
   <method>logMessage</method>
@@ -264,9 +238,9 @@
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101296</millis>
-  <sequence>25</sequence>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558486</millis>
+  <sequence>23</sequence>
   <level>END</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
   <method>endKeyword</method>
@@ -276,9 +250,9 @@
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101302</millis>
-  <sequence>26</sequence>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558493</millis>
+  <sequence>24</sequence>
   <level>PASSED</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
   <method>logMessage</method>
@@ -288,9 +262,9 @@
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101303</millis>
-  <sequence>27</sequence>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558493</millis>
+  <sequence>25</sequence>
   <level>START</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
   <method>startKeyword</method>
@@ -300,35 +274,35 @@
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101303</millis>
-  <sequence>29</sequence>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558494</millis>
+  <sequence>27</sequence>
   <level>START</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
   <method>startKeyword</method>
   <thread>1</thread>
-  <message>Start action : report.addTestCaseContext(testCaseContext)</message>
+  <message>Start action : reportgen.afterTestCase(testCaseContext)</message>
   <nestedLevel>1</nestedLevel>
   <escapedJava>false</escapedJava>
-  <property name="startLine">40</property>
+  <property name="startLine">34</property>
   <property name="stepIndex">1</property>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101305</millis>
-  <sequence>31</sequence>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558501</millis>
+  <sequence>29</sequence>
   <level>END</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
   <method>endKeyword</method>
   <thread>1</thread>
-  <message>End action : report.addTestCaseContext(testCaseContext)</message>
+  <message>End action : reportgen.afterTestCase(testCaseContext)</message>
   <nestedLevel>1</nestedLevel>
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101306</millis>
-  <sequence>32</sequence>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558502</millis>
+  <sequence>30</sequence>
   <level>END</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
   <method>endKeyword</method>
@@ -338,9 +312,9 @@
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101306</millis>
-  <sequence>33</sequence>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558503</millis>
+  <sequence>31</sequence>
   <level>END</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
   <method>endTest</method>
@@ -350,9 +324,9 @@
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101315</millis>
-  <sequence>34</sequence>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558515</millis>
+  <sequence>32</sequence>
   <level>START</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
   <method>startTest</method>
@@ -368,9 +342,9 @@
   <property name="isOptional">false</property>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101320</millis>
-  <sequence>36</sequence>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558541</millis>
+  <sequence>34</sequence>
   <level>START</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
   <method>startKeyword</method>
@@ -380,8 +354,34 @@
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101321</millis>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558542</millis>
+  <sequence>36</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : reportgen.beforeTestCase(testCaseContext)</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="startLine">29</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558543</millis>
+  <sequence>38</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : reportgen.beforeTestCase(testCaseContext)</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558543</millis>
   <sequence>39</sequence>
   <level>END</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
@@ -392,8 +392,8 @@
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101410</millis>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558643</millis>
   <sequence>40</sequence>
   <level>START</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
@@ -406,8 +406,8 @@
   <property name="stepIndex">1</property>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101414</millis>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558647</millis>
   <sequence>41</sequence>
   <level>INFO</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
@@ -418,8 +418,8 @@
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101415</millis>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558647</millis>
   <sequence>42</sequence>
   <level>END</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
@@ -430,8 +430,8 @@
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101415</millis>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558648</millis>
   <sequence>43</sequence>
   <level>START</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
@@ -444,8 +444,8 @@
   <property name="stepIndex">2</property>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101446</millis>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558674</millis>
   <sequence>45</sequence>
   <level>FAILED</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
@@ -463,8 +463,8 @@ TC2.run(TC2:6)
 </property>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101447</millis>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558675</millis>
   <sequence>46</sequence>
   <level>END</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
@@ -475,8 +475,8 @@ TC2.run(TC2:6)
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101459</millis>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558693</millis>
   <sequence>48</sequence>
   <level>FAILED</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
@@ -500,7 +500,7 @@ com.kms.katalon.core.exception.StepFailedException: Failed intentionally
 	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
 	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
 	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
-	at TempTestSuite1619743093511.run(TempTestSuite1619743093511.groovy:39)
+	at TempTestSuite1619747551973.run(TempTestSuite1619747551973.groovy:39)
 </message>
   <exception>
     <message>com.kms.katalon.core.exception.StepFailedException: Failed intentionally</message>
@@ -578,7 +578,7 @@ com.kms.katalon.core.exception.StepFailedException: Failed intentionally
       <method>call</method>
     </frame>
     <frame>
-      <class>TempTestSuite1619743093511</class>
+      <class>TempTestSuite1619747551973</class>
       <method>run</method>
       <line>39</line>
     </frame>
@@ -601,14 +601,14 @@ com.kms.katalon.core.exception.StepFailedException: Failed intentionally
 	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
 	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
 	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
-	at TempTestSuite1619743093511.run(TempTestSuite1619743093511.groovy:39)
+	at TempTestSuite1619747551973.run(TempTestSuite1619747551973.groovy:39)
 </property>
   <property name="failed.exception.class">com.kms.katalon.core.exception.StepFailedException</property>
   <property name="failed.exception.message">Failed intentionally</property>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101462</millis>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558697</millis>
   <sequence>50</sequence>
   <level>START</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
@@ -619,34 +619,34 @@ com.kms.katalon.core.exception.StepFailedException: Failed intentionally
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101463</millis>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558697</millis>
   <sequence>52</sequence>
   <level>START</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
   <method>startKeyword</method>
   <thread>1</thread>
-  <message>Start action : report.addTestCaseContext(testCaseContext)</message>
+  <message>Start action : reportgen.afterTestCase(testCaseContext)</message>
   <nestedLevel>1</nestedLevel>
   <escapedJava>false</escapedJava>
-  <property name="startLine">40</property>
+  <property name="startLine">34</property>
   <property name="stepIndex">1</property>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101463</millis>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558698</millis>
   <sequence>54</sequence>
   <level>END</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
   <method>endKeyword</method>
   <thread>1</thread>
-  <message>End action : report.addTestCaseContext(testCaseContext)</message>
+  <message>End action : reportgen.afterTestCase(testCaseContext)</message>
   <nestedLevel>1</nestedLevel>
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101464</millis>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558698</millis>
   <sequence>55</sequence>
   <level>END</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
@@ -657,8 +657,8 @@ com.kms.katalon.core.exception.StepFailedException: Failed intentionally
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101464</millis>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558698</millis>
   <sequence>56</sequence>
   <level>END</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
@@ -669,8 +669,8 @@ com.kms.katalon.core.exception.StepFailedException: Failed intentionally
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101464</millis>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558699</millis>
   <sequence>57</sequence>
   <level>START</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
@@ -681,692 +681,16 @@ com.kms.katalon.core.exception.StepFailedException: Failed intentionally
   <escapedJava>false</escapedJava>
 </record>
 <record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101465</millis>
+  <date>2021-04-30T10:52:38</date>
+  <millis>1619747558699</millis>
   <sequence>59</sequence>
   <level>START</level>
   <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
   <method>startKeyword</method>
   <thread>1</thread>
-  <message>Start action : println(&amp;quot;@AfterTestSuite&amp;quot;)</message>
+  <message>Start action : reportgen.afterTestSuite(testSuiteContext)</message>
   <nestedLevel>1</nestedLevel>
   <escapedJava>false</escapedJava>
-  <property name="startLine">48</property>
+  <property name="startLine">39</property>
   <property name="stepIndex">1</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101469</millis>
-  <sequence>60</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : println(&amp;quot;@AfterTestSuite&amp;quot;)</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101469</millis>
-  <sequence>61</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : listFilesInBasicReportFolder()</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">49</property>
-  <property name="stepIndex">2</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101470</millis>
-  <sequence>62</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : listFilesInBasicReportFolder()</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101470</millis>
-  <sequence>63</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : projectDir = Paths.get(getProjectDir())</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">95</property>
-  <property name="stepIndex">1</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101478</millis>
-  <sequence>64</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : projectDir = Paths.get(getProjectDir())</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101478</millis>
-  <sequence>65</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : reportFolder = Paths.get(getReportFolder())</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">96</property>
-  <property name="stepIndex">2</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101480</millis>
-  <sequence>66</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : reportFolder = Paths.get(getReportFolder())</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101480</millis>
-  <sequence>67</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : files =  }).collect(Collectors.toSet())</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">97</property>
-  <property name="stepIndex">3</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101576</millis>
-  <sequence>68</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : files =  }).collect(Collectors.toSet())</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101577</millis>
-  <sequence>69</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : for (java.nio.file.Path f : files)</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">100</property>
-  <property name="stepIndex">4</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101597</millis>
-  <sequence>70</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : relativePath = projectDir.relativize(f)</message>
-  <nestedLevel>2</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">101</property>
-  <property name="stepIndex">1</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101625</millis>
-  <sequence>71</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : relativePath = projectDir.relativize(f)</message>
-  <nestedLevel>2</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101625</millis>
-  <sequence>72</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : println($relativePath $f.toFile().length() bytes)</message>
-  <nestedLevel>2</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">102</property>
-  <property name="stepIndex">2</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101697</millis>
-  <sequence>73</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : println($relativePath $f.toFile().length() bytes)</message>
-  <nestedLevel>2</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101697</millis>
-  <sequence>74</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : relativePath = projectDir.relativize(f)</message>
-  <nestedLevel>2</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">101</property>
-  <property name="stepIndex">1</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101698</millis>
-  <sequence>75</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : relativePath = projectDir.relativize(f)</message>
-  <nestedLevel>2</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101698</millis>
-  <sequence>76</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : println($relativePath $f.toFile().length() bytes)</message>
-  <nestedLevel>2</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">102</property>
-  <property name="stepIndex">2</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101699</millis>
-  <sequence>77</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : println($relativePath $f.toFile().length() bytes)</message>
-  <nestedLevel>2</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101699</millis>
-  <sequence>78</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : relativePath = projectDir.relativize(f)</message>
-  <nestedLevel>2</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">101</property>
-  <property name="stepIndex">1</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101700</millis>
-  <sequence>79</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : relativePath = projectDir.relativize(f)</message>
-  <nestedLevel>2</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101700</millis>
-  <sequence>80</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : println($relativePath $f.toFile().length() bytes)</message>
-  <nestedLevel>2</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">102</property>
-  <property name="stepIndex">2</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101700</millis>
-  <sequence>81</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : println($relativePath $f.toFile().length() bytes)</message>
-  <nestedLevel>2</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101701</millis>
-  <sequence>82</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : relativePath = projectDir.relativize(f)</message>
-  <nestedLevel>2</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">101</property>
-  <property name="stepIndex">1</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101701</millis>
-  <sequence>83</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : relativePath = projectDir.relativize(f)</message>
-  <nestedLevel>2</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101701</millis>
-  <sequence>84</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : println($relativePath $f.toFile().length() bytes)</message>
-  <nestedLevel>2</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">102</property>
-  <property name="stepIndex">2</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101702</millis>
-  <sequence>85</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : println($relativePath $f.toFile().length() bytes)</message>
-  <nestedLevel>2</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101703</millis>
-  <sequence>86</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : for (java.nio.file.Path f : files)</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101703</millis>
-  <sequence>87</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : expro = get(getReportFolder()).resolve(&amp;quot;execution.properties&amp;quot;)</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">52</property>
-  <property name="stepIndex">3</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101704</millis>
-  <sequence>88</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : expro = get(getReportFolder()).resolve(&amp;quot;execution.properties&amp;quot;)</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101704</millis>
-  <sequence>89</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : executionProperties = JsonSlurper().parse(expro.toFile())</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">53</property>
-  <property name="stepIndex">4</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101728</millis>
-  <sequence>90</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : executionProperties = JsonSlurper().parse(expro.toFile())</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101728</millis>
-  <sequence>91</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : report.setExecutionProperties(executionProperties)</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">54</property>
-  <property name="stepIndex">5</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101730</millis>
-  <sequence>92</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : report.setExecutionProperties(executionProperties)</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101730</millis>
-  <sequence>93</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : outDir = get(getProjectDir()).resolve(&amp;quot;PlainReport&amp;quot;)</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">56</property>
-  <property name="stepIndex">6</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101731</millis>
-  <sequence>94</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : outDir = get(getProjectDir()).resolve(&amp;quot;PlainReport&amp;quot;)</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101731</millis>
-  <sequence>95</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : serialize(testSuiteContext, outDir)</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">57</property>
-  <property name="stepIndex">7</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101731</millis>
-  <sequence>96</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : serialize(testSuiteContext, outDir)</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101732</millis>
-  <sequence>97</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : if (!(Files.exists(outDir)))</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">66</property>
-  <property name="stepIndex">1</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101734</millis>
-  <sequence>98</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : if (!(Files.exists(outDir)))</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101734</millis>
-  <sequence>99</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : outPath = outDir.resolve(&amp;quot;plainreport_&amp;quot; + replace(&amp;quot;Test Suites/&amp;quot;, &amp;quot;&amp;quot;).replace(&amp;quot;/&amp;quot;, &amp;quot;_&amp;quot;) + &amp;quot;.json&amp;quot;)</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">71</property>
-  <property name="stepIndex">2</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101744</millis>
-  <sequence>100</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : outPath = outDir.resolve(&amp;quot;plainreport_&amp;quot; + replace(&amp;quot;Test Suites/&amp;quot;, &amp;quot;&amp;quot;).replace(&amp;quot;/&amp;quot;, &amp;quot;_&amp;quot;) + &amp;quot;.json&amp;quot;)</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101745</millis>
-  <sequence>101</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : text = report.toSortedJson()</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">76</property>
-  <property name="stepIndex">3</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101977</millis>
-  <sequence>102</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : text = report.toSortedJson()</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101977</millis>
-  <sequence>103</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : messagesFile = outDir.resolve(&amp;quot;messages_&amp;quot; + replace(&amp;quot;Test Suites/&amp;quot;, &amp;quot;&amp;quot;).replace(&amp;quot;/&amp;quot;, &amp;quot;_&amp;quot;) + &amp;quot;.txt&amp;quot;)</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">79</property>
-  <property name="stepIndex">4</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101979</millis>
-  <sequence>104</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : messagesFile = outDir.resolve(&amp;quot;messages_&amp;quot; + replace(&amp;quot;Test Suites/&amp;quot;, &amp;quot;&amp;quot;).replace(&amp;quot;/&amp;quot;, &amp;quot;_&amp;quot;) + &amp;quot;.txt&amp;quot;)</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:21</date>
-  <millis>1619743101979</millis>
-  <sequence>105</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : text = report.printableMessages()</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">83</property>
-  <property name="stepIndex">5</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:22</date>
-  <millis>1619743102048</millis>
-  <sequence>106</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : text = report.printableMessages()</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:22</date>
-  <millis>1619743102048</millis>
-  <sequence>107</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : source = get(getReportFolder()).resolve(&amp;quot;execution0.log&amp;quot;)</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">86</property>
-  <property name="stepIndex">6</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:22</date>
-  <millis>1619743102049</millis>
-  <sequence>108</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : source = get(getReportFolder()).resolve(&amp;quot;execution0.log&amp;quot;)</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:22</date>
-  <millis>1619743102049</millis>
-  <sequence>109</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : dest = outDir.resolve(&amp;quot;execution0.log&amp;quot;)</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">87</property>
-  <property name="stepIndex">7</property>
-</record>
-<record>
-  <date>2021-04-30T09:38:22</date>
-  <millis>1619743102050</millis>
-  <sequence>110</sequence>
-  <level>END</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>endKeyword</method>
-  <thread>1</thread>
-  <message>End action : dest = outDir.resolve(&amp;quot;execution0.log&amp;quot;)</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-</record>
-<record>
-  <date>2021-04-30T09:38:22</date>
-  <millis>1619743102050</millis>
-  <sequence>111</sequence>
-  <level>START</level>
-  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
-  <method>startKeyword</method>
-  <thread>1</thread>
-  <message>Start action : Files.copy(source, dest, REPLACE_EXISTING)</message>
-  <nestedLevel>1</nestedLevel>
-  <escapedJava>false</escapedJava>
-  <property name="startLine">88</property>
-  <property name="stepIndex">8</property>
 </record>
