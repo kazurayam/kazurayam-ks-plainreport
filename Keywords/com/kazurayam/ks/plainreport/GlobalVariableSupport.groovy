@@ -1,4 +1,4 @@
-package my
+package com.kazurayam.ks.plainreport
 
 import java.lang.reflect.Field
 import java.lang.reflect.Modifier

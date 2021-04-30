@@ -1,4 +1,4 @@
-Custom Test Report compiled by TestListener
+Custom Test Report compiled by Test Listener
 ========
 
 This is a small [Katalon Studio](https://www.katalon.com/download/) project for demonstration purpose.

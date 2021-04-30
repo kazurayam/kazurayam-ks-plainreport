@@ -1,4 +1,4 @@
-package my
+package com.kazurayam.ks.plainreport
 
 import static org.hamcrest.CoreMatchers.*
 import static org.junit.Assert.*
@@ -16,7 +16,7 @@ import com.google.gson.GsonBuilder
 import com.google.gson.JsonParser
 
 @RunWith(JUnit4.class)
-class JsonUtilTest {
+class JsonSortUtilTest {
 
 	String input = """{
 	"e": "e",
@@ -48,10 +48,10 @@ class JsonUtilTest {
 
 
 	@Test
-	void test_cm() {
+	void test_comparator() {
 		String var2 = "var2"
 		String var1 = "var1"
-		int result = JsonUtil.cm.compare(var2, var1)
+		int result = JsonSortUtil.comparator.compare(var2, var1)
 		assertEquals(1, result)
 	}
 
@@ -59,7 +59,7 @@ class JsonUtilTest {
 	void test_sort() {
 		JsonElement inputJson = new JsonParser().parse(input)
 		JsonElement expectedJson = new JsonParser().parse(expected)
-		JsonElement actualJson = JsonUtil.sort(inputJson)
+		JsonElement actualJson = JsonSortUtil.sort(inputJson)
 		assertEquals(expectedJson, actualJson)
 		println("actualJson is: " + actualJson)
 	}

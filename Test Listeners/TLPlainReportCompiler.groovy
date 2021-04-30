@@ -14,28 +14,28 @@ import com.kms.katalon.core.context.TestSuiteContext
 import com.kms.katalon.core.webui.driver.DriverFactory
 
 import groovy.json.JsonSlurper
-import my.Memo
+import com.kazurayam.ks.plainreport.PlainReport
 
-class CustomReportCompiler {
+class TLPlainReportCompiler {
 	
 	static Path outDir
-	static Memo memo
+	static PlainReport report
 	
 	static {
 		if (outDir == null) {
-			outDir = Paths.get(RunConfiguration.getProjectDir()).resolve('CustomReport')
+			outDir = Paths.get(RunConfiguration.getProjectDir()).resolve('PlainReport')
 		}
 		if (!Files.exists(outDir)) {
 			Files.createDirectory(outDir)
 		}
-		memo = new Memo()
+		report = new PlainReport()
 	}
 	
 	@BeforeTestSuite
 	def beforeTestSuite(TestSuiteContext testSuiteContext) {
-		memo = new Memo(testSuiteContext)
-		memo.setExecutionProfile(RunConfiguration.getExecutionProfile())
-		memo.setExecutedBrowser(DriverFactory.getExecutedBrowser().toString())
+		report = new PlainReport(testSuiteContext)
+		report.setExecutionProfile(RunConfiguration.getExecutionProfile())
+		report.setExecutedBrowser(DriverFactory.getExecutedBrowser().toString())
 	}
 	
 	@BeforeTestCase
@@ -44,7 +44,7 @@ class CustomReportCompiler {
 	
 	@AfterTestCase
 	def afterTestCase(TestCaseContext testCaseContext) {
-		memo.addTestCaseContext(testCaseContext)
+		report.addTestCaseContext(testCaseContext)
 	}
 	
 	@AfterTestSuite
@@ -54,26 +54,26 @@ class CustomReportCompiler {
 		println("@AfterTestSuite")
 		listFilesInReportFolder()
 		
-		// fetch the execution.properties file in the Report folder into the Memo object
+		// fetch the execution.properties file in the Report folder into the PlainReport object
 		Path expro = Paths.get(RunConfiguration.getReportFolder()).resolve('execution.properties')
 		Map executionProperties = new JsonSlurper().parse(expro.toFile())
-		memo.setExecutionProperties(executionProperties)
+		report.setExecutionProperties(executionProperties)
 		
 		// serialize the Memo object into a JSON file
-		Path memoFile = outDir.resolve(
-			'memo_' + 
+		Path outPath = outDir.resolve(
+			'plainreport_' + 
 			testSuiteContext.getTestSuiteId().replace('Test Suites/', '').replace('/', '_') +
 			'.json')
 		
 		//memoFile.toFile().text = memo.toJson()
-		memoFile.toFile().text = memo.toSortedJson()
+		outPath.toFile().text = report.toSortedJson()
 		
 		// print TestCaseContext messages into a plain text file
 		Path messagesFile = outDir.resolve(
 			"messages_" +
 			testSuiteContext.getTestSuiteId().replace('Test Suites/', '').replace('/', '_') +
 			'.txt')
-		messagesFile.toFile().text = memo.printableMessages()
+		messagesFile.toFile().text = report.printableMessages()
 		
 		// copy the execution0.log file in the Report folder into the CustomReport folder
 		Path source = Paths.get(RunConfiguration.getReportFolder()).resolve('execution0.log')

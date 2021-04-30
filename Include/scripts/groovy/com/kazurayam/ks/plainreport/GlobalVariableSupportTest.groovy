@@ -1,4 +1,4 @@
-package my
+package com.kazurayam.ks.plainreport
 
 import static org.junit.Assert.*
 

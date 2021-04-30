@@ -1,0 +1,19 @@
+Test Cases/TC2 FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Failed intentionally
+  at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+  at com.kms.katalon.core.util.KeywordUtil$markFailed.call(Unknown Source)
+  at TC2.run(TC2:6)
+  at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+  at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+  at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:398)
+  at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:389)
+  at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:368)
+  at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:360)
+  at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:255)
+  at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+  at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+  at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+  at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+  at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+  at TempTestSuite1619742136275.run(TempTestSuite1619742136275.groovy:39)

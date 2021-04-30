@@ -1,4 +1,4 @@
-package my
+package com.kazurayam.ks.plainreport
 
 import java.util.Comparator
 import java.util.stream.Collectors
@@ -7,12 +7,16 @@ import com.google.gson.JsonArray
 import com.google.gson.JsonElement
 import com.google.gson.JsonObject
 
-public class JsonUtil {
+/**
+ * 
+ * @author kazurayam
+ */
+public class JsonSortUtil {
 
-	static Comparator cm = { String a, String b -> a.compareToIgnoreCase(b) }
+	static Comparator comparator = { String a, String b -> a.compareToIgnoreCase(b) }
 
-	private JsonUtil() {}
-	
+	private JsonSortUtil() {}
+
 	/**
 	 * 
 	 * @param jsonElement
@@ -31,9 +35,9 @@ public class JsonUtil {
 			throw new IllegalArgumentException("given jsonElement is unknown type")
 		}
 	}
-	
+
 	static JsonObject sort(JsonObject jsonObject) {
-		List<String> keySet = jsonObject.keySet().stream().sorted(cm).collect(Collectors.toList())
+		List<String> keySet = jsonObject.keySet().stream().sorted(comparator).collect(Collectors.toList())
 		JsonObject sorted = new JsonObject()
 		for (String key : keySet) {
 			JsonElement ele = jsonObject.get(key)
@@ -52,7 +56,7 @@ public class JsonUtil {
 		}
 		return sorted
 	}
-	
+
 	static JsonArray sort(JsonArray jsonArray) {
 		JsonArray result = new JsonArray()
 		jsonArray.forEach { JsonElement je ->
@@ -72,5 +76,4 @@ public class JsonUtil {
 		}
 		return result
 	}
-	
 }

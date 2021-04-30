@@ -1,4 +1,4 @@
-package my
+package com.kazurayam.ks.plainreport
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -7,7 +7,7 @@ import com.google.gson.JsonParser
 import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.context.TestSuiteContext
 
-public class Memo {
+public class PlainReport {
 
 	private TestSuiteContext testSuite
 	private String executionProfile
@@ -16,11 +16,11 @@ public class Memo {
 	private List<TestCaseContext> testCases
 	private Map<String, Object> executionProperties
 
-	Memo() {
+	PlainReport() {
 		this(null)
 	}
 
-	Memo(TestSuiteContext testSuiteContext) {
+	PlainReport(TestSuiteContext testSuiteContext) {
 		this.testSuite = testSuiteContext
 		this.testCases = new ArrayList<TestCaseContext>()
 		this.executionProfile_GlobalVariables = GlobalVariableSupport.aquireGlobalVariablesAsMap()
@@ -51,7 +51,7 @@ public class Memo {
 	String toSortedJson() {
 		String json = this.toJson()
 		JsonElement je = new JsonParser().parse(json)
-		JsonElement jeSorted = JsonUtil.sort(je)
+		JsonElement jeSorted = JsonSortUtil.sort(je)
 		Gson gson = new GsonBuilder().setPrettyPrinting().create()
 		return gson.toJson(jeSorted)
 	}
