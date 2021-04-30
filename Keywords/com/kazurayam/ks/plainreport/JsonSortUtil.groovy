@@ -8,6 +8,8 @@ import com.google.gson.JsonElement
 import com.google.gson.JsonObject
 
 /**
+ * provides capability to sort contents (name=value) of JSONObject by name.
+ * sorting is performed recursively
  * 
  * @author kazurayam
  */

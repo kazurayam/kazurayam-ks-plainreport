@@ -8,7 +8,8 @@ import internal.GlobalVariable
 public class GlobalVariableSupport {
 
 	/**
-	 *
+	 * convert the runtime Execution Profile (a set of GlobalVariables) to a Map object. 
+	 * This method is useful to include the GlobalVariable name=value pairs in the PlainReport
 	 */
 	static Map<String, Object> aquireGlobalVariablesAsMap() {
 		Field[] declaredFields = GlobalVariable.class.getDeclaredFields()
@@ -17,8 +18,8 @@ public class GlobalVariableSupport {
 		for (Field declaredField in declaredFields) {
 			//println "declaredField.getName() is: ${declaredField.getName()}"
 			if (Modifier.isStatic(declaredField.getModifiers()) &&
-				Modifier.isPublic(declaredField.getModifiers()) &&
-				! declaredField.getName().startsWith("__")  ) {
+			Modifier.isPublic(declaredField.getModifiers()) &&
+			! declaredField.getName().startsWith("__")  ) {
 				pubstaticFields.add(declaredField)
 			}
 		}

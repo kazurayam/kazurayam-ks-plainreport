@@ -18,16 +18,9 @@ import com.kazurayam.ks.plainreport.PlainReport
 
 class TLPlainReportCompiler {
 	
-	static Path outDir
-	static PlainReport report
+	private static PlainReport report
 	
 	static {
-		if (outDir == null) {
-			outDir = Paths.get(RunConfiguration.getProjectDir()).resolve('PlainReport')
-		}
-		if (!Files.exists(outDir)) {
-			Files.createDirectory(outDir)
-		}
 		report = new PlainReport()
 	}
 	
@@ -49,23 +42,37 @@ class TLPlainReportCompiler {
 	
 	@AfterTestSuite
 	def afterTestSuite(TestSuiteContext testSuiteContext) {
+		
 		// for debug
 		// print the list of files in the Reports folder
 		println("@AfterTestSuite")
-		listFilesInReportFolder()
+		listFilesInBasicReportFolder()
 		
 		// fetch the execution.properties file in the Report folder into the PlainReport object
 		Path expro = Paths.get(RunConfiguration.getReportFolder()).resolve('execution.properties')
 		Map executionProperties = new JsonSlurper().parse(expro.toFile())
 		report.setExecutionProperties(executionProperties)
 		
-		// serialize the Memo object into a JSON file
+		Path outDir = Paths.get(RunConfiguration.getProjectDir()).resolve('PlainReport')
+		serialize(testSuiteContext, outDir)
+	}
+	
+	/**
+	 * 
+	 * @param testSuiteContext
+	 */
+	private void serialize(TestSuiteContext testSuiteContext, Path outDir) {
+		
+		if (!Files.exists(outDir)) {
+			Files.createDirectory(outDir)
+		}
+		
+		// serialize the PlainReport object into a JSON file
 		Path outPath = outDir.resolve(
 			'plainreport_' + 
 			testSuiteContext.getTestSuiteId().replace('Test Suites/', '').replace('/', '_') +
 			'.json')
 		
-		//memoFile.toFile().text = memo.toJson()
 		outPath.toFile().text = report.toSortedJson()
 		
 		// print TestCaseContext messages into a plain text file
@@ -81,7 +88,10 @@ class TLPlainReportCompiler {
 		Files.copy(source, dest, StandardCopyOption.REPLACE_EXISTING);
 	}
 	
-	void listFilesInReportFolder() {
+	/**
+	 * 
+	 */
+	private void listFilesInBasicReportFolder() {
 		Path projectDir = Paths.get(RunConfiguration.getProjectDir())
 		Path reportFolder = Paths.get(RunConfiguration.getReportFolder())
 		Set files = Files.list(reportFolder)
