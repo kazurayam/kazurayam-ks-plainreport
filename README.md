@@ -11,8 +11,7 @@ This project was developed using Katalon Studio version 7.9.1 but it will run wi
 # Problem to solve
 
 In the Katalon User Forum, there was a [question](https://forum.katalon.com/t/get-results-html-path-filename-through-code/50526) that asked how to automatically copy the Test Reports in HTML/PDF format to another location once a test suite finished. In response to the question, I replied with a [post](https://forum.katalon.com/t/get-results-html-path-filename-through-code/50526/5)
-where I described my previous solution. To be honest, I am not very much happy with my previous solution. Russ Thomas replied a [post](https://forum.katalon.com/t/get-results-html-path-filename-through-code/50526/3) where
-he mentioned that, instead of bothering around the built-in Reports, he developed his own reporting functionality. 
+where I described my previous solution. To be honest, I am not very much happy with my previous solution. Russ Thomas replied a [post](https://forum.katalon.com/t/get-results-html-path-filename-through-code/50526/3) where he mentioned that, instead of bothering around the built-in Reports, he developed his own reporting functionality. 
 
 So I was motivated to seek for what custom report I can develop in Katalon Studio.
 
@@ -64,11 +63,11 @@ Select the Test Suite "TS1" and run it.
 Once the `Test Suites/TS1` finished, a new folder `<projectDir>/PlainReport` will be created.
 Inside it you will find a 3 files.
 
-- execution0.log
-- messages.*TestSuiteID*.*yyyyMMdd_hhmmss*.txt
-- report.*TestSuiteID*.*yyyyMMdd_hhmmss*.json
+- `execution0.log`
+- `messages.<TestSuiteID>.<yyyyMMdd_hhmmss>.txt`
+- `report.<TestSuiteID>.<yyyyMMdd_hhmmss>.json`
 
-The [`execution0.log`] file is copied from the Reports folder just to for easier reference. In the log file you can find all messages emitted by your tests with a lot of additives including timestamp.
+The [`execution0.log`](PlainReport/execution0.log) file is copied from the Reports folder just to for easier reference. In the log file you can find all messages emitted by your tests with a lot of additives including timestamp.
 
 The [`report.TestSuiteID.yyyyMMdd_hhmmss.json`](PlainReport/plainreport.TS1.20210430_211217.json) file contains information from:
 - the TestSuiteContext object
